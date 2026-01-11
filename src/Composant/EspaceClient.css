@@ -1,0 +1,128 @@
+/**
+ * Styles pour le composant EspaceClient
+ * Respecte le design vert/blanc du projet React Native
+ */
+
+.espace-client-container {
+  min-height: calc(100vh - 140px);
+  padding: 20px;
+  background-color: #f5f5f5;
+  padding-bottom: 80px; /* Espace pour la bottom navigation */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.espace-client-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.client-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.client-icon {
+  font-size: 48px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3f2fd;
+  border-radius: 50%;
+}
+
+.client-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+.client-content {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.info-group {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-group:last-of-type {
+  border-bottom: none;
+}
+
+.info-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 18px;
+  color: #333;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #f44336;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.3);
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .espace-client-container {
+    padding: 15px;
+  }
+
+  .espace-client-card {
+    padding: 20px;
+  }
+
+  .client-header h2 {
+    font-size: 24px;
+  }
+}
